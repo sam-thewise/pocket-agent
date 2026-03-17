@@ -21,7 +21,8 @@ import type { LLMPlannerOptions } from "./defaults/llmPlanner.js";
  * Configuration for {@link createQuickAgent}.
  *
  * At minimum you specify a {@link ProviderName} (e.g. `"openai"`), and the
- * provider-specific adapter reads API keys and defaults from the environment.
+ * provider-specific adapter reads API keys and provider-specific defaults
+ * (model/base URL/etc.) from environment variables.
  */
 export type QuickAgentConfig = {
   /**
@@ -34,7 +35,8 @@ export type QuickAgentConfig = {
    * - `"ollama"`
    * - `"lmstudio"`
    *
-   * Each adapter reads its API key and base URL from env variables by default.
+   * Each adapter reads its API key and provider-specific defaults
+   * (model/base URL/etc.) from env variables by default.
    */
   provider: ProviderName;
   /**
