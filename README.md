@@ -109,6 +109,52 @@ const run = await runner.run({
 
 For fluent step definitions and a minimal planner/executor/evaluator, see the docs below.
 
+## Using from AI coding agents (Cursor, Claude, etc.)
+
+You can treat `pocket-agent` like any other npm package when you’re coding inside tools like Cursor or Claude.
+
+### 1. Install
+
+```bash
+npm install pocket-agent
+```
+
+Optionally add a provider SDK (e.g. OpenAI):
+
+```bash
+npm install openai
+```
+
+Set your env vars (for example, OpenAI):
+
+- `OPENAI_API_KEY` – your key
+- `OPENAI_MODEL` (optional) – defaults are documented in the docs
+
+### 2. Quick one-function usage
+
+Use the built-in quick agent when you just want “goal in → answer out”:
+
+```ts
+import { createQuickAgent } from "pocket-agent";
+
+const runner = createQuickAgent({ provider: "openai" });
+
+export async function runPocketAgent(goal: string) {
+  const run = await runner.run({ goal });
+  return run.outputs?.answer ?? run.outputs;
+}
+```
+
+Now anywhere in your code (or from an AI coding agent), you can call:
+
+```ts
+const result = await runPocketAgent("Summarize the architecture of this repo.");
+console.log(result);
+```
+
+For a longer guide, see
+[Using pocket-agent from AI coding agents](https://github.com/sam-thewise/pocket-agent/blob/master/docs/using-with-ai-agents.md).
+
 ---
 
 ## Documentation
@@ -123,6 +169,7 @@ More guides:
 | [Contracts](https://github.com/sam-thewise/pocket-agent/blob/master/docs/contracts.md) | Planner, StepExecutor, StepEvaluator, Tools. |
 | [Events](https://github.com/sam-thewise/pocket-agent/blob/master/docs/events.md) | Event-driven usage with `runner.start()`. |
 | [API key and local models](https://github.com/sam-thewise/pocket-agent/blob/master/docs/api-key-and-local-models.md) | Cloud (OpenAI), Ollama, LM Studio, tools, project planner. |
+| [Using with AI agents](https://github.com/sam-thewise/pocket-agent/blob/master/docs/using-with-ai-agents.md) | How to use pocket-agent from Cursor, Claude, and other AI coding tools. |
 | [Examples](https://github.com/sam-thewise/pocket-agent/blob/master/docs/examples.md) | All runnable scripts (`npm run example:*`). |
 
 ## Scripts
