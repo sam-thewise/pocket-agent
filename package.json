@@ -6,6 +6,7 @@
   "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "url": "https://github.com/sam-thewise/pocket-agent",
   "scripts": {
     "build": "tsc",
     "test": "vitest run",
