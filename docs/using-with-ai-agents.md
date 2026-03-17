@@ -1,4 +1,4 @@
-## Using pocket-agent from AI coding agents
+# Using pocket-agent from AI coding agents
 
 This guide shows how to use `pocket-agent` from tools like Cursor, Claude, or other AI coding assistants.
 
