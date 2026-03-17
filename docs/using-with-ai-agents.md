@@ -68,3 +68,4 @@ export async function runPocketAgentWithPlan(goal: string) {
 
 See the main README for more details about planners, executors, evaluators, and tools.
 
+[Back to README](../README.md)
