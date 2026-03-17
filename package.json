@@ -6,7 +6,11 @@
   "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "url": "https://github.com/sam-thewise/pocket-agent",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sam-thewise/pocket-agent"
+  },
+  "homepage": "https://github.com/sam-thewise/pocket-agent#readme",
   "scripts": {
     "build": "tsc",
     "test": "vitest run",
