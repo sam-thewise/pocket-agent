@@ -1,6 +1,6 @@
 # pocket-agent
 
-**Plan-driven agent orchestration for Node.** You plug in a planner, executor, and evaluator (e.g. backed by any LLM); the framework runs the loop—plan → steps → evaluate → retry or replan—so you don’t re-implement it.
+**Plan-driven agent orchestration for Node.** You plug in a planner, executor, and evaluator (e.g. backed by any LLM); the framework runs the loop-plan → steps → evaluate → retry or replan-so you don’t re-implement it.
 
 **Author:** sam_thewise
 
@@ -16,7 +16,7 @@
 
 ### What this does (plain terms)
 
-You give a **goal** (e.g. “Summarize this contract” or “How does this codebase work?”). The library turns that into a **plan**: a ordered list of **steps**, each with a clear objective and inputs/outputs. It runs the steps one by one (or in order when steps depend on each other), uses your **model** (LLM) and optional **tools** to do the work, then asks an **evaluator** whether each step is actually done. If not, it retries or replans; when everything’s done, you get a single result with all the step outputs. You don’t wire the loop yourself—you plug in *how* to plan, *how* to run a step, and *how* to judge completion; the **runner** does the rest.
+You give a **goal** (e.g. “Summarize this contract” or “How does this codebase work?”). The library turns that into a **plan**: a ordered list of **steps**, each with a clear objective and inputs/outputs. It runs the steps one by one (or in order when steps depend on each other), uses your **model** (LLM) and optional **tools** to do the work, then asks an **evaluator** whether each step is actually done. If not, it retries or replans; when everything’s done, you get a single result with all the step outputs. You don’t wire the loop yourself-you plug in *how* to plan, *how* to run a step, and *how* to judge completion; the **runner** does the rest.
 
 **Terms you’ll see:**
 
@@ -37,11 +37,11 @@ Once these mean something, the rest of the doc (quick start, fluent plan, defaul
 
 ## Features
 
-- **Explicit plans** — Machine-readable step list before execution
-- **Dependency-ordered execution** — Steps run when their dependencies are satisfied
-- **Lifecycle events** — `run.started`, `plan.created`, `step.started`, `step.completed`, `run.completed`, etc.
-- **Bounded retries** — Evaluator-driven completion with configurable retry policy
-- **Structured outputs** — Per-step and final run outputs
+- **Explicit plans** - Machine-readable step list before execution
+- **Dependency-ordered execution** - Steps run when their dependencies are satisfied
+- **Lifecycle events** - `run.started`, `plan.created`, `step.started`, `step.completed`, `run.completed`, etc.
+- **Bounded retries** - Evaluator-driven completion with configurable retry policy
+- **Structured outputs** - Per-step and final run outputs
 
 ## Install
 
@@ -127,14 +127,14 @@ More guides live under **`docs/`** (links work on GitHub):
 
 ## Scripts
 
-- `npm run build` — compile TypeScript to `dist/`
-- `npm test` — run tests
-- `npm run test:watch` — run tests in watch mode
-- `npm run example:quick-start` — quick-start example
-- `npm run example:fluent-plan` — fluent plan example
-- `npm run example:goal-driven-llm` — goal-only with LLM-generated steps
-- `npm run example:minimal` — minimal planner/executor/evaluator (no API key)
-- `npm run example:openai` — full run with tools (OpenAI or local)
-- `npm run example:planner` — project structure from a description
+- `npm run build` - compile TypeScript to `dist/`
+- `npm test` - run tests
+- `npm run test:watch` - run tests in watch mode
+- `npm run example:quick-start` - quick-start example
+- `npm run example:fluent-plan` - fluent plan example
+- `npm run example:goal-driven-llm` - goal-only with LLM-generated steps
+- `npm run example:minimal` - minimal planner/executor/evaluator (no API key)
+- `npm run example:openai` - full run with tools (OpenAI or local)
+- `npm run example:planner` - project structure from a description
 
 See [docs/examples.md](docs/examples.md) for the full list and what each script does.
