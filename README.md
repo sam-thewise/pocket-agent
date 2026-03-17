@@ -1,7 +1,5 @@
 # pocket-agent
 
-**[→ GitHub](https://github.com/sam-thewise/pocket-agent)**
-
 **Plan-driven agent orchestration for Node.** You plug in a planner, executor, and evaluator (e.g. backed by any LLM); the framework runs the loop-plan → steps → evaluate → retry or replan-so you don’t re-implement it.
 
 **Author:** sam_thewise
@@ -115,7 +113,7 @@ For fluent step definitions and a minimal planner/executor/evaluator, see the do
 
 ## Documentation
 
-More guides (absolute links so they work on npm and GitHub):
+More guides:
 
 | Doc | Description |
 |-----|-------------|

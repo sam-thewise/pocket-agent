@@ -1,6 +1,6 @@
 {
   "name": "pocket-agent",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Reusable Node.js framework for plan-driven agent execution",
   "author": "sam_thewise",
   "type": "module",
