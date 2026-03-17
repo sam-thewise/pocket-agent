@@ -128,6 +128,6 @@ const evaluator: StepEvaluator = {
 };
 ```
 
-With `planner`, `executor`, and `evaluator` defined as above, pass them into `createAgentRunner`. For a default LLM-based evaluator instead, use `provider` (see [Default evaluators and providers](default-evaluators-and-providers.md)).
+With `planner`, `executor`, and `evaluator` defined as above, pass them into `createAgentRunner`. For a default LLM-based evaluator instead, use `provider` (see [Default evaluators and providers](https://github.com/sam-thewise/pocket-agent/blob/master/docs/default-evaluators-and-providers.md)).
 
-[← Back to README](../README.md)
+[← Back to README](https://github.com/sam-thewise/pocket-agent/blob/master/README.md)

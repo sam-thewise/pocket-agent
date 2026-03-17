@@ -22,4 +22,4 @@ const result = await execution.result;
 
 Events include: `run.started`, `plan.created`, `step.started`, `step.completed`, `step.retrying`, `step.failed`, `run.completed`, `run.failed`.
 
-[← Back to README](../README.md)
+[← Back to README](https://github.com/sam-thewise/pocket-agent/blob/master/README.md)

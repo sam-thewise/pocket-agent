@@ -1,5 +1,7 @@
 # pocket-agent
 
+**[→ GitHub](https://github.com/sam-thewise/pocket-agent)**
+
 **Plan-driven agent orchestration for Node.** You plug in a planner, executor, and evaluator (e.g. backed by any LLM); the framework runs the loop-plan → steps → evaluate → retry or replan-so you don’t re-implement it.
 
 **Author:** sam_thewise
@@ -113,17 +115,17 @@ For fluent step definitions and a minimal planner/executor/evaluator, see the do
 
 ## Documentation
 
-More guides live under **`docs/`** (links work on GitHub):
+More guides (absolute links so they work on npm and GitHub):
 
 | Doc | Description |
 |-----|-------------|
-| [Fluent plan and defaults](docs/fluent-plan-and-defaults.md) | Build plans with `step()` + `createFixedPlanPlanner` and run with `createDefaultExecutor`. |
-| [Custom planner and executor](docs/custom-planner-executor.md) | Minimal planner, executor, and evaluator (full code). |
-| [Default evaluators and providers](docs/default-evaluators-and-providers.md) | Provider table, `provider` in `createAgentRunner`, adapters. |
-| [Contracts](docs/contracts.md) | Planner, StepExecutor, StepEvaluator, Tools. |
-| [Events](docs/events.md) | Event-driven usage with `runner.start()`. |
-| [API key and local models](docs/api-key-and-local-models.md) | Cloud (OpenAI), Ollama, LM Studio, tools, project planner. |
-| [Examples](docs/examples.md) | All runnable scripts (`npm run example:*`). |
+| [Fluent plan and defaults](https://github.com/sam-thewise/pocket-agent/blob/master/docs/fluent-plan-and-defaults.md) | Build plans with `step()` + `createFixedPlanPlanner` and run with `createDefaultExecutor`. |
+| [Custom planner and executor](https://github.com/sam-thewise/pocket-agent/blob/master/docs/custom-planner-executor.md) | Minimal planner, executor, and evaluator (full code). |
+| [Default evaluators and providers](https://github.com/sam-thewise/pocket-agent/blob/master/docs/default-evaluators-and-providers.md) | Provider table, `provider` in `createAgentRunner`, adapters. |
+| [Contracts](https://github.com/sam-thewise/pocket-agent/blob/master/docs/contracts.md) | Planner, StepExecutor, StepEvaluator, Tools. |
+| [Events](https://github.com/sam-thewise/pocket-agent/blob/master/docs/events.md) | Event-driven usage with `runner.start()`. |
+| [API key and local models](https://github.com/sam-thewise/pocket-agent/blob/master/docs/api-key-and-local-models.md) | Cloud (OpenAI), Ollama, LM Studio, tools, project planner. |
+| [Examples](https://github.com/sam-thewise/pocket-agent/blob/master/docs/examples.md) | All runnable scripts (`npm run example:*`). |
 
 ## Scripts
 
@@ -137,4 +139,4 @@ More guides live under **`docs/`** (links work on GitHub):
 - `npm run example:openai` - full run with tools (OpenAI or local)
 - `npm run example:planner` - project structure from a description
 
-See [docs/examples.md](docs/examples.md) for the full list and what each script does.
+See [Examples](https://github.com/sam-thewise/pocket-agent/blob/master/docs/examples.md) for the full list and what each script does.

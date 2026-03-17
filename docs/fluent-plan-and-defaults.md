@@ -46,4 +46,4 @@ console.log(run.outputs?.summary);
 
 **Step builder:** `step(id, name).objective("...").outputs("key").inputsFromContext("key").inputsFromStep(stepId, "key").dependsOn("id").build()`. Then `createFixedPlanPlanner(steps)` to use that plan every run. Use `createDefaultExecutor({ model })` so each step is run by prompting the model (no tools). For a single “answer the goal” step with zero config, use `createQuickAgent({ provider: "openai" })` or `createSingleStepPlanner()`.
 
-[← Back to README](../README.md)
+[← Back to README](https://github.com/sam-thewise/pocket-agent/blob/master/README.md)

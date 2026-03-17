@@ -11,4 +11,4 @@
 
 The package orchestrates planning, scheduling, execution, evaluation, retries, and replanning.
 
-[← Back to README](../README.md)
+[← Back to README](https://github.com/sam-thewise/pocket-agent/blob/master/README.md)

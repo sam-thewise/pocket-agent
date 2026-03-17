@@ -42,8 +42,8 @@ Plan the structure of a new project from a short description:
 npm run example:planner -- "A REST API with Express and SQLite for a todo app"
 ```
 
-Uses the same env as the OpenAI example. See [examples/run-project-planner.ts](../examples/run-project-planner.ts).
+Uses the same env as the OpenAI example. See [examples/run-project-planner.ts](https://github.com/sam-thewise/pocket-agent/blob/master/examples/run-project-planner.ts).
 
-You can use `OPENAI_API_URL` instead of `OPENAI_BASE_URL`, and `MODEL` instead of `OPENAI_MODEL`. See [.env.example](../.env.example) for a full list.
+You can use `OPENAI_API_URL` instead of `OPENAI_BASE_URL`, and `MODEL` instead of `OPENAI_MODEL`. See [.env.example](https://github.com/sam-thewise/pocket-agent/blob/master/.env.example) for a full list.
 
-[← Back to README](../README.md)
+[← Back to README](https://github.com/sam-thewise/pocket-agent/blob/master/README.md)

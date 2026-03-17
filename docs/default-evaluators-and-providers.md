@@ -59,4 +59,4 @@ const runner = createAgentRunner({
 
 Same pattern for Anthropic or Gemini. The **LLM evaluator** asks the model whether a step’s completion criteria are satisfied and returns a verdict (`complete` | `retry` | `needs_replan` | `failed`) with reasons.
 
-[← Back to README](../README.md)
+[← Back to README](https://github.com/sam-thewise/pocket-agent/blob/master/README.md)
